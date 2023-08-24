@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Russel Medical</title>
+    <link rel="stylesheet" href="BookingPage.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="booking--navbar">
+        <div class="booking--logo ms-5">
+            <img src="asset/img/Logo.jpeg" alt="" class="Logo">
+            <h1 class="display-6 navbar--heading">Russel Street Medical</h1>
+        </div>
+        <a href="homePage.html" class="back--arrow"><i class="fa-solid fa-arrow-left "></i></a>
+    </div>
+
+    <div class="booking--form-container container">
+        <h1>Fill the form to make an Appointment.</h1>
+        <form class="booking--form">
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Patient Id</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" onkeyup="upperCaseF(this)">
+                <p class="Invalid">Invalid patient ID</p>
+            </div>
+            <div class="mb-3">
+                <p>Please Select Timings for the Appointment</p>
+                <div class="Date--timings">
+                    <div class="Appoint--Date">
+                        <input type="date" id="demo" class="Date-input" name="Date-input">
+                    </div>
+                    <div class="Appoint--Time">
+                        <div class="Appoint--1 Appoint">9am - 12pm</div>
+                        <div class="Appoint--2 Appoint">12pm - 3pm</div>
+                        <div class="Appoint--3 Appoint">3pm - 6pm</div>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-3">
+                <h6 class="mt-4">Reason for the appointment.</h6>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Please Select (with empty / blank value)</option>
+                    <option value="2">Childhood Vaccination Shots</option>
+                    <option value="3">Influenza Shot</option>
+                    <option value="4">Covid Booster Shot</option>
+                    <option value="5">Blood Testt</option>
+                </select>
+            </div>
+            <div class="mb-3 Advice--area">
+                <p class="Advice Advice-2" data-value="2">A disclaimer that multiple vaccines are normally administered in combination
+                    and may cause the child to be sluggish or feverous for 24 - 48 hours afterwards.</p>
+                <p class="Advice Advice-3" data-value="3">The best time to get vaccinated is in April and May each year for optimal
+                    protection over the winter months.</p>
+                <p class="Advice Advice-4" data-value="4">Advice that everyone should arrange to have their third shot as soon as
+                    possible and adults over the age of 30 should have their fourth shot to protect against new variant
+                    strains.</p>
+                <p class="Advice Advice-5" data-value="5">That some tests require some fasting ahead of time and that a staff member
+                    will advise them on this prior to the appointment.</p>
+            </div>
+            <div class="submit--btn">
+                <button type="submit" class="btn btn-primary mb-3">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    </div>
+
+    <footer class="foo">
+        <div>
+            <p class="text-center">2023 &copy; Russel Street Medical. Divyanshi Bhasin: s3959447</p>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/6fc405fab2.js" crossorigin="anonymous"></script>
+    <script src="BookingPage.js"></script>
+
+</body>
+
+</html>

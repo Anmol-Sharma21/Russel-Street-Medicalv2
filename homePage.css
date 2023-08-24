@@ -1,0 +1,351 @@
+*{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0 !important;
+    padding: 0 !important;
+
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.7rem 0rem !important;
+    background-color: #00AAFF;
+}
+.left{
+    display: flex;
+    margin-left: 4rem;
+}
+.right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55%;
+}
+
+.navbar_buttons{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.navbar_button{
+    /* flex-grow: 1; */
+    padding: 10px 18px;
+    font-size: 1.5rem;
+    text-align: center;
+    background-color: #FFD400;
+    margin: 4px 10px;
+    transition: 0.3s;
+    height: 2.5rem;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.Logo{
+    width: 65px;
+    height: 60px;
+    margin-right: 10px;
+}
+.logo--name{
+    height: 3.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar_buttons a{
+    text-decoration: none;
+    color: black;
+}
+.navbar_button:hover{
+    background-color: #9a830e;
+    transition: 0.3s;
+
+}
+
+.homepage{
+    height: 700px;
+    background-image: url(asset/img/banner.png);
+    background-size: cover;
+}
+.homepage_content{
+    display: flex;
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+}
+.heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width:800px){
+    .heading{
+        text-align: center;
+
+    }
+    .homepage_content{
+        width: 100%;
+    }
+    
+}
+.inside_heading h1{
+    font-size: 7rem;
+    margin: 0px 2rem!important;
+}
+.inside_heading p{
+    font-size: 2rem;
+    margin: 0px 5rem !important;
+}
+
+.about_us_heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.timings{
+    display: flex;
+    text-align: center;
+}
+@media screen and (max-width:1000px){
+    .timings{
+        flex-wrap: wrap;
+    }
+    #timings_reverse{
+        flex-wrap: wrap-reverse !important;
+    }
+}
+.timings_text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+
+}
+.timings_half{
+    flex-grow: 1;
+}
+.timings_image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+.timings_image img{
+    width: 371px;
+    height: 124px;
+}
+.about_us_table{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.cell{
+    flex-grow: 1;
+    flex-basis: 300px;
+    height: 4rem;
+    border: 2px solid #00AAFF;
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    background-color:#ffe76d;
+}
+
+.profile{
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    border-radius: 30px;
+    flex-wrap: wrap;
+}
+.profile_text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    width: 70%;
+}
+.profile_image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    width: 30%;
+}
+
+.profile_image img{
+    width: 100%;
+    border-radius: 30px;
+}
+#profile_1{
+    background-color: #ffe76d;
+}
+#profile_2{
+    background-color: #5bc8ff;
+}
+@media screen and (max-width:1000px){
+    .profile_image, .profile_text{
+        width: 100% !important;
+    }
+    .profile_image{
+        margin: 1rem;
+    }
+    #profile_2{
+        flex-direction: column-reverse;
+
+    }
+}
+
+.service_area{
+    display: flex;
+}
+
+.service_button1{
+    width: 100%;
+    text-align: center;
+    /* border-radius: 30px; */
+}
+.service_button2{
+    width: 100%;
+    text-align: center;
+    /* border-radius: 30px; */
+}
+
+.service_current{
+    width: 100%;
+    background-color: #5bc8ff;
+    /* border-bottom:1px solid black ; */
+    border-radius: 30px 0 0 0;
+
+}
+
+.service_new_button{
+    width: 100%;
+    background-color: #ffe76d;
+    border-radius: 0 30px 0 0;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.service_new:hover, .service_new_button:hover{
+    background-color: #e7c000;
+    transition: 0.3s;
+}
+.service_bottom{
+    background-color: #5bc8ff;
+    display: flex;
+    border-radius: 0 0 30px 30px;
+    height: 500px;
+
+}
+#new_patients{
+    background-color: #ffe76d !important;
+}
+.current_image, .current_text{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.service_bottom img{
+    width: 100%;
+    border-radius: 30px;
+
+}
+.hidden{
+    display: none;
+}
+.block{
+    display: block;
+}
+
+/* Responsive navbar */
+
+/* @media screen and (max-width:1176px) { */
+@media screen and (max-width:1378px) {
+    .right {
+        display: grid;
+        grid-template-columns: auto;
+        margin: 0;
+        width: 100%;
+        position: absolute;
+        top: -1000px;
+        left: 0px;
+        opacity: 0;
+        transition: all 0.5s ease;
+        height: 50vh;
+        z-index: -1;
+        background: #0790d4;
+    }
+
+    .right.active {
+        background: #0790d4;
+        top: 100%;
+        left: 0%;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 99;
+        height: 36vh;
+        font-size: 1.6rem;
+    }
+
+    .navbar__links {
+        text-align: center;
+        padding: 2rem;
+        width: 100%;
+        display: table;
+    }
+
+    .navbar_button{
+        width: 100%;
+        border-radius: 0px;
+    }
+
+    .navbar__toggle .bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        transition: all 0.3s ease-in-out;
+        background: #fff;
+        cursor: pointer;
+    }
+
+    #mobile-menu {
+        position: absolute;
+        top: 20%;
+        right: 5%;
+        transform: translate(5%, 20%);
+    }
+
+    #mobile-menu.is-active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    #mobile-menu.is-active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    #mobile-menu.is-active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
+
+.foo{
+    background-color: #00AAFF !important; 
+    color: #ffe253 !important;
+    font-weight: 600;
+    padding: 10px;
+    height: 3rem;
+}

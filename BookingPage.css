@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.booking--navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.7rem 4rem !important;
+    background-color: #00AAFF;
+    height: 6rem;
+}
+
+.booking--logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Logo{
+    width: 65px;
+    height: 60px;
+    margin-right: 10px;
+}
+
+.back--arrow{
+    font-size: 2rem;
+    padding: 0.5rem 1rem;
+    outline: none;
+}
+
+.back--arrow:hover{
+    transition: all 0.5s ease;
+    background-color:#FFD400 ;
+    border: none;
+    border-radius: 15rem;
+    outline: none;
+}
+
+.navbar--heading{
+    height: 3.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.booking--form-container{
+    display: block;
+    width: 60%!important;
+    margin-top: 5rem;
+}
+
+.booking--form{
+    margin-top: 2rem;
+}
+
+#exampleInputEmail1{
+    border: 1px solid black;
+}
+
+.form-select{
+    border: 1px solid black!important;
+}
+
+.Background{
+    color: black!important;
+    background-color: white!important;
+}
+
+.Date--timings{
+    display: flex;
+    align-items:  center;
+}
+
+.Date-input{
+    padding: 0.3rem 0.5rem;
+    cursor: pointer;
+}
+
+.Appoint--Time{
+    display: flex;
+    border: 3px solid #2e528f;
+    border-radius: 15px;
+    margin-left: 2rem;
+}
+
+.Appoint--1{
+    border-radius: 12px 0px 0px 12px;
+    padding: 0.5rem 1rem;
+    background-color: #3a63ac;
+    color: #ffff00;
+    cursor: pointer;
+}
+
+.Appoint--2{
+    border-left: 2px solid #2e528f;
+    border-right: 2px solid #2e528f;
+    padding: 0.5rem 1rem;
+    background-color: #ffff00;
+    color: #3a63ac;
+    cursor: pointer;
+}
+
+.Appoint--3{
+    border-radius: 0px 12px 12px 0px;
+    padding: 0.5rem 1rem;
+    background-color: #3a63ac;
+    color: #ffff00;
+    cursor: pointer;
+}
+
+.Advice{
+    border: 1px solid #2e528f;
+    padding: 1rem 2rem;
+    display: none;
+}
+
+.display-block{
+    display: block;
+}
+
+.submit--btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Invalid{
+    display: none;
+    color: red;
+}
+
+.foo{
+    background-color: #00AAFF !important; 
+    color: #ffe253 !important;
+    font-weight: 600;
+    padding: 10px;
+    height: 3rem;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
